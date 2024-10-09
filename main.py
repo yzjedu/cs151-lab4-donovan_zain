@@ -34,10 +34,18 @@ def calculate_bill():
 
     # Step 6: If package is green or blue, prompt for used_gB
     if package in ['green', 'blue']:
-        used_gB = int(input("How many GBs did you use this month? "))
+        used_gB = (input("How many GBs did you use this month? "))
+        while not (used_gB.isdigit() and int(used_gB) > 0):
+            print("That is not an option")
+            used_gB = (input("How many GBs did you use this month? "))
+        used_gB = (int(used_gB))
 
     # Step 8: ask user for number of months owed
-    months = int(input("How many months do you owe? "))
+    months = (input("How many months do you owe? "))
+    while not (months.isdigit() and int(months) > 0):
+        print("That is not an option")
+        months = (input("How many months do you owe? "))
+    months = (int(months))
 
     # Step 9: Calculate total based the package
     if package in ['green', 'blue']:
