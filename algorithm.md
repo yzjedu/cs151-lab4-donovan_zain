@@ -13,8 +13,8 @@
    2. plan_gB = 2
    3. rate = 15
 3. if the user chooses blue
-   1.price =70.00
-   2.plan_gB = 4
+   1. price =70.00
+   2. plan_gB = 4
    3. rate = 10
 4. if the user chooses purple 
    1. price = 99.95
